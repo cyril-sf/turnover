@@ -5,11 +5,11 @@ RSpec.describe "questions/index", :type => :view do
     assign(:questions, [
       Question.create!(
         :sentence => "Sentence",
-        :company => nil
+        :company => ""
       ),
       Question.create!(
         :sentence => "Sentence",
-        :company => nil
+        :company => ""
       )
     ])
   end

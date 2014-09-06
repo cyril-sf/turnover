@@ -10,5 +10,5 @@
   <%= @question.company %>
 </p>
 
-<%= link_to 'Edit', edit_question_path(@question) %> |
-<%= link_to 'Back', questions_path %>
+<%= link_to 'Edit', edit_company_question_path(@question.company, @question) %> |
+<%= link_to 'Back', company_questions_path( @question.company ) %>

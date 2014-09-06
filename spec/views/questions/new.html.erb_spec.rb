@@ -2,9 +2,12 @@ require 'rails_helper'
 
 RSpec.describe "questions/new", :type => :view do
   before(:each) do
+    company = Company.new(
+      name: 'shit company'
+    )
     assign(:question, Question.new(
       :sentence => "MyString",
-      :company => nil
+      :company => company
     ))
   end
 

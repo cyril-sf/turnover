@@ -4,7 +4,7 @@ RSpec.describe "questions/show", :type => :view do
   before(:each) do
     @question = assign(:question, Question.create!(
       :sentence => "Sentence",
-      :company => nil
+      :company => ""
     ))
   end
 
